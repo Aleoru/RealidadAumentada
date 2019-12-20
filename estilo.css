@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(252, 218, 235);
+}
+#wrapper{margin:auto;
+         width: 95%;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+header{
+    background-image: url(imagenes/header.jpg);
+    background-size: cover;
+    background-position: right;
+    height: 225px;
+}
+header #titulo{padding-top: 5%;
+    font-size: xx-large;
+    color: white;
+    font-weight: bold;
+    
+}
+nav{
+    background-color: rgb(0, 143, 187);
+}
+nav ul {margin:0;
+    list-style-type: none;
+}
+nav ul li{display: inline-block;
+    padding: 10px;
+}
+nav ul li a {text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+nav ul li a:hover{color:rgb(209, 107, 158);}
+main{margin:0;
+    background-color: silver;
+    text-align: center;
+    padding-bottom: 2%;
+}
+main h1{margin:0;
+    color:rgb(209, 107, 158);
+    font-size: 270%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+main p{margin-left: initial;
+    text-indent: 5%;
+    text-align: justify;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+main img{width: 20%;
+        margin: 2%;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.288) 15px 15px 15px;
+}
+main li{text-align: left;
+        padding-left: 3%;
+}
+footer{margin:0;
+    background-color: rgb(0, 143, 187);
+}
+footer p{color: white;
+    margin:0;
+    text-align: center;
+    font-weight:bold;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+@media only screen and (max-width:900px){
+    header #titulo{font-size: 180%;
+                padding-top: 11%;
+                padding-left: 10%;}
+    main img {width:40%;
+              margin:4%;}
+}
+
+@media only screen and (max-width:600px){
+    header {background-image: url("imagenes/header.jpg");
+            background-position: right;
+            height:225px;}
+    header #titulo{font-size: 170%;
+            padding-top: 50px;
+            padding-left: 30px;
+    } 
+    nav ul li{display: block;
+        padding: 10px;
+}
+    main{padding-bottom: 15%;}
+    main h1{font-size: 220%;}
+    main p{padding-left: 7%;
+        padding-right: 7%;
+        text-indent: 15%;}
+    main li{padding-left: 14%;}
+    main img {width:80%;
+              margin:7%;
+            }
+    footer p{padding-top: 5%;
+            padding-bottom: 5%;
+            font-size: 65%;}
+}
